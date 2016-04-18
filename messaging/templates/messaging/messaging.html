@@ -1,0 +1,70 @@
+ {% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en" style="height:100%;">
+  <head>
+    <title>akalite.</title>
+    
+  <link rel="shortcut icon" href="{% static 'messaging/css/images/icon.jpg' %}">
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+  <!-- ALL DEPENDENCIES -->
+  <link rel="stylesheet" href="{% static 'lib/bootstrap/dist/css/bootstrap.css' %}">
+  <script src="{% static 'lib/angular/angular.js' %}"></script>
+  <script src="{% static 'lib/angular-bootstrap/ui-bootstrap-tpls.js' %}"></script>
+  <script src="{% static 'lib/angular-animate/angular-animate.js' %}"></script>
+  <script src="{% static 'lib/angular-websocket/angular-websocket.js' %}"></script>
+  <script type="text/javascript" src="{% static 'messaging/js/app.js' %}"></script>
+  <script type="text/javascript" src="{% static 'messaging/js/services.js' %}"></script>
+  <script type="text/javascript" src="{% static 'messaging/js/directives.js' %}"></script>
+  <script type="text/javascript" src="{% static 'messaging/js/controllers.js' %}"></script>
+  <link rel="stylesheet" type"text/css" href="{% static 'messaging/css/messagingstyle.css' %}"/> 
+
+
+  </head>
+  <body ng-app="messagingControllers" ng-controller="messageCtrl">
+    {% verbatim %}
+  
+    <div class="container-fluid" >
+      <div class="page row">
+        <!-- Contacts Panel -->
+        <div id="contacts_panel" class="col-lg-3">
+          <div id="contact-header" class="row">
+            <h1>Contacts</h1>
+            <button type="button" id="btn-add-contact" class="btn btn-default btn-lg pull-right"><div class="glyphicon glyphicon-plus" aria-hidden="true"></div></button>
+          </div>
+          <div id="contact-tile" class="row" ng-repeat="contact in contacts" ng-click="switchContacts(contact)">
+                <h4> {{ contact.phone_number }} | {{ contact.first_name }} {{ contact.last_name }}  </h4>
+          </div>
+          <div id="add-contact-tile" class="row">
+              <input type="text" class="add-margins" ng-model="contact.first" placeholder="First Name"></input>
+              <input type="text" class="add-margins" ng-model="contact.last" placeholder="Last Name"></input>
+              <input type="text" class="add-margins" ng-model="contact.phone" placeholder="Phone"></input>
+          </div>
+        </div>
+
+        <!-- Messaging Panel -->
+        <div id="message_panel" class="col-lg-9">
+          <div id="message_header" class="row">
+            <h1>{{ select_contact.first_name }} {{ select_contact.last_name }}</h1>
+            <i ng-if="select_contact.first_name" class="glyphicon glyphicon-pencil btn btn-lg btn-icon pull-right" aria-hidden="true"></i>
+          </div>
+          <div id="message-board" class="row"> 
+            <!-- Messages -->
+            <div id="message-blob" class="well" ng-repeat="message in messages">
+              <p ng-if="message.sent_by_me" id="my-message-tile">{{ message.text }}</p>
+              <p ng-if="!message.sent_by_me" id="other-message-tile">{{ message.text }}</p>
+            </div>
+            <div id="anchor"> ANCHOR</div>
+            <div ng-if="messages.length == 0" ng-show="select_contact.first_name" id="other-message-tile" class="row notify-header">Beginning of conversation history.</div>
+          </div>
+
+          <!--  Reply Box -->
+          <div id="message_reply_box" class="row">
+            <input id="text_box" class="textfield input-field" ng-keypress="sendMessage($event)" ng-model="input.message_field" placeholder="Send a message ..."></input>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endverbatim %}
+  </body>
+</html>

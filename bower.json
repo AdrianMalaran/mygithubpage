@@ -1,0 +1,26 @@
+{
+  "name": "bowerpackage",
+  "description": "Website for messaging",
+  "main": "index.js",
+  "license": "ISC",
+  "keywords": [
+    "node"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "^1.3.1",
+    "angular": "^1.5.3",
+    "angular-ui-bootstrap": "^1.3.1",
+    "bootstrap": "^3.3.6",
+    "angular-animate": "^1.5.3",
+    "angular-websocket": "^1.1.0"
+  }
+}
