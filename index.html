@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" style="height:100%;" ng-app="homeControllers">
   <head>
-	<meta charset="utf-8">
-	<title>vantage.</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="shortcut icon" href="{% static 'app/css/images/icon.jpg' %}">
+  <meta charset="utf-8">
+  <title>adrian.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-	<link rel="stylesheet" href="{% static 'lib/bootstrap/dist/css/bootstrap.css' %}">
-	<script src="{% static 'lib/angular/angular.js' %}"></script>
-	<script src="{% static 'lib/angular-bootstrap/ui-bootstrap-tpls.js' %}"></script>
-	<script src="{% static 'lib/angular-animate/angular-animate.js' %}"></script>
-	<script type="text/javascript" src="{% static 'messaging/js/controllers.js' %}"></script>
-	<link rel="stylesheet" type"text/css" href="{% static 'messaging/dist/styles/styles.css' %}"/>
+  <!-- <link rel="stylesheet" href="{% static 'lib/bootstrap/dist/css/bootstrap.css' %}">
+  <script src="{% static 'lib/angular/angular.js' %}"></script>
+  <script src="{% static 'lib/angular-bootstrap/ui-bootstrap-tpls.js' %}"></script>
+  <script src="{% static 'lib/angular-animate/angular-animate.js' %}"></script> -->
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-	<script src="controllers.js"></script>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="controllers.js"></script>
+  <link rel="stylesheet" type"text/css" href="styles.css"/> 
+  <link rel="icon" href="images/icon.png">
 
   </head>
   <body id="home" ng-controller="homeCtrl">
@@ -29,11 +33,13 @@
       </div>
       <div class="parallax__layer parallax__layer--base base"> <!-- Section 2 Base Layer -->
       <div class="menu-bar">
-        <h4 class="pull-left menu-item-strong">Adrian Malaran</h4>
-        <h4 class="pull-right menu-item">Portfolio</h4>       
-        <h4 class="pull-right menu-item">About Me</h4>
-        <h4 class="pull-right menu-item">Resume</h4>
-        <a href="https://github.com/AdrianMalaran">
+        <h4 class="pull-left font-white menu-item-strong">Adrian Malaran</h4>
+        <!-- <h4 class="pull-right font-white menu-item">Portfolio</h4>       
+        <h4 class="pull-right font-white menu-item">About Me</h4> -->
+        <a href="RESUME.pdf" target="_blank">
+          <h4 class="pull-right font-white menu-item">Resume</h4>
+        </a>
+        <a href="https://github.com/AdrianMalaran" target="_blank">
           <h4 class="pull-right font-white menu-item">GitHub</h4>
         </a>
       </div>
@@ -44,7 +50,7 @@
   <div class="parallax__group group2"> <!-- Section 2 -->
     <div class="parallax__layer parallax__layer--base base">
       <div class="page-desc-center-padding">
-        <h1 class="font-black">Hello. I'm Adrian.</h1>
+        <h1 class="font-black">Hello. I'm Adrian and I want to change the world.</h1>
       </div>
     </div>
   </div>
@@ -60,7 +66,7 @@
             <br>
             Driven by my passion for robotics, dance, and adventure, I focus on self-improvement by self-learning.
             <br>
-            I'd also like to thankyou for visitng my website.
+            I am commited to excellence.
           </p>
         </div>
       
@@ -73,9 +79,6 @@
 
 
     <div class="parallax__group group3"> <!-- Section 3 -->
-      <div class="parallax__layer parallax__layer--back back"><!-- Section Background 3 -->
-
-      </div>
     <div class="parallax__layer parallax__layer--base base"> <!-- Section Base 3-->
       <div class="page-desc-center-padding">
         <h2 class="section-title">-- Projects --</h2>
@@ -84,34 +87,25 @@
     </div>
   </div>
 
-  <div class="parallax__group group4"> <!-- Section 1 -->
-    <div class="parallax__layer parallax__layer--back back"> <!-- Section 1 Background Layer -->
-
-    </div>
-    <div class="parallax__layer parallax__layer--base base"> <!-- Section 2 Base Layer -->
+  <div class="parallax__group group4"> <!-- Section 4 -->
+    <div class="parallax__layer parallax__layer--base base"> <!-- Section 4 Base Layer -->
 
       <!-- HACKATHON -->
-      <!-- <div class="project">
-        <div class="row">
-          <div id="picture-trakrecord-left" class="col-md-6 picture-left">
-            
-          </div>
-          <div id="picture-trakrecord-right" class="col-md-6 picture-right">
-            
-          </div>
-        </div>
+      <div class="project">
         <div class="row">
           <div class="col-lg-3 project-trakrecord">
             <div class="title pull-left">
-              TRAKRECORD
+              TrakRecord
               <br>
-              (ANDROID) 
+              Android 
               <br>
-              TUNER
+              Application
             </div>
           </div>
           <div class="col-lg-9">
-            <div class="content pull-left"> 
+            <div class="content pull-left">
+              -- March 2016 --
+              <br>
               Constructed and configured an autonomous NXT Robotics system that utilizes unique sensors to measure pitch and simpulate a personalized machine.
               <br>
               <br>
@@ -119,57 +113,150 @@
             </div>
           </div>
         </div>  
-      </div> -->
+        <!-- <div class="row">
+          <div id="picture-trakrecord-left" class="col-md-6 picture-left"></div>
+          <div id="picture-trakrecord-right" class="col-md-6 picture-right"></div>
+        </div> -->
+      </div>
+
+      <!-- MESSAGING APP -->
+      <div class="project">
+        <div class="row">
+          <div class="col-lg-3 project-trakrecord">
+            <div class="title pull-left">
+              Web Based
+              <br>
+              Messaging
+              <br>
+              App
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="content pull-left">
+              -- March 2016 --
+              <br> 
+              Created a fully functional application that enables users to message any phone number through a web based GUI (Graphical User Interface).
+              <br>
+              <br>
+              This application was created as a substitute to Facebook messenger that only allows users to contact other Facebook contacts. 
+            </div>
+          </div>
+        </div>  
+        <!-- <div class="row">
+          <div id="picture-trakrecord-left" class="col-md-6 picture-left"></div>
+          <div id="picture-trakrecord-right" class="col-md-6 picture-right"></div>
+        </div> -->
+      </div>
+
+      <!-- GAME DESIGN -->
+      <div class="project">
+        <div class="row">
+          <div class="col-lg-3 project-trakrecord">
+            <div class="title pull-left">
+              COSMOS
+              <br>
+              Game 
+              <br>
+              App
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="content pull-left">
+              -- March 2016 --
+              <br> 
+              Developed a fully functional multiplayer game app within a timespan of 20 hours.
+              <br>
+              <br>
+              Programmed game element algorithms simulating a realistic environment that increased difficulty and depth to the game. 
+            </div>
+          </div>
+        </div>  
+        <!-- <div class="row">
+          <div id="picture-trakrecord-left" class="col-md-6 picture-left"></div>
+          <div id="picture-trakrecord-right" class="col-md-6 picture-right"></div>
+        </div> -->
+      </div>
+
+
+
       <!-- UKULELE -->
       <div class="project">
         <div class="row">
-          <div id="picture-ukulele-left" class="col-md-6 picture-left">
-            
-          </div>
-          <div id="picture-ukulele-right" class="col-md-6 picture-right">
-            
-          </div>
-        </div>
-        <div class="row">
           <div class="col-lg-3 project-ukulele">
             <div class="title pull-left">
-              AUTONOMOUS
+              Autonomous
               <br>
-              UKULELE 
+              Ukulele
               <br>
-              TUNER
+              Tuner
             </div>
           </div>
           <div class="col-lg-9">
             <div class="content pull-left"> 
-              Constructed and configured an autonomous NXT Robotics system that utilizes unique sensors to measure pitch and simpulate a personalized machine.
+              -- December 2015 --
+              <br>
+              Constructed and configured an autonomous NXT Robotics system that utilizes unique sensors to measure the pitch of a ukulele and simulate a personalized, user-friendly machine.
               <br>
               <br>
-              Programmed the system to independently interpret the pitch and engage the mechanical components accodingly to adjust the tensionin the strings to the correct pitch.
+              We programmed AI to independtly interpret the pitch and engage the mechanical components accodingly to adjust the tension in the strings to the correct pitch.
+              <br>
+              
             </div>
           </div>
         </div>  
+        <!-- <div class="row">
+          <div id="picture-ukulele-left" class="col-md-6 picture-left"></div>
+          <div id="picture-ukulele-right" class="col-md-6 picture-right"></div>
+        </div> -->
       </div>
+
+      <!-- FUEL CELL CAR -->
+      <div class="project">
+        <div class="row">
+          <div class="col-lg-3 project-trakrecord">
+            <div class="title pull-left">
+              Hydrogen Fuel
+              <br>
+              Cell
+              <br>
+              Car
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="content pull-left">
+              -- October 2015 --
+              <br> 
+              Configured a small scale vehicle running off hydrogen based gas and modified the mechanical chasis and its surrounding components to better suit a given track environment. 
+              <br>
+              <br>
+              Programmed the vehicle to perform unianimous tasks and interact with an environment given a main objective
+            </div>
+          </div>
+        </div>  
+        <!-- <div class="row">
+          <div id="picture-trakrecord-left" class="col-md-6 picture-left"></div>
+          <div id="picture-trakrecord-right" class="col-md-6 picture-right"></div>
+        </div> -->
+      </div>
+
+
       
 
 
     </div>
   </div>
 
-  <div class="parallax__group group5"> <!-- Section 1 -->
-    <div class="parallax__layer parallax__layer--back back"> <!-- Section 1 Background Layer -->
 
-    </div>
-    <div class="parallax__layer parallax__layer--base base"> <!-- Section 2 Base Layer -->
-      
-    </div>
+  <div class="group5" style="padding-top:15vh;"> <!-- Section 4 -->
+      <h2><u>contact me</u></h2>
+      <br>
+      <h2><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> adrian.malaran@uwaterloo.ca</h2>
+      <br>
+      <h2> <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> (905) 749-1916</h2>
   </div>
-    
 
-    <div class="parallax__group group5"> <!-- Group 1 -->
-      <div class="parallax__layer parallax__layer--back back"><!-- Background Layer -->
-      </div>
-    <div id="section-contact" class="parallax__layer parallax__layer--base base"> <!-- Base Layer -->
+<!--     <div class="parallax__group group5"> 
+    <div id="section-contact" class="parallax__layer parallax__layer--base base">
       <div class="row top-bottom-border small-padding-top small-padding-bottom">
         <h2> <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> (905) 749-1916</h2>
         
@@ -202,8 +289,10 @@
         <a href="http://www.facebook.com/squarespace" target="_blank" class="font-white sqs-svg-icon--wrapper facebook" style=""><div><svg class="sqs-svg-icon--social"></svg></div></a>
       </div>
     </div>
-    </div>
+    </div> -->
     
   </div>
   </body>
 </html>
+
+
