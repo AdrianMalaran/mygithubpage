@@ -21,98 +21,189 @@
 	<link rel="stylesheet" href="styles.css">
 
   </head>
-  <body ng-controller="homeCtrl">
-		  <div class="demo__info">
-    Pure CSS parallax scroll demo #3 by Keith Clark. Please read the <a href="../">blog post</a> for more information.
-  </div>
-
-  <div class="parallax">
-    <div id="group1" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base">
-        <div class="menu-bar">
-			<h4 class="pull-left menu-item-strong">Adrian Malaran</h4>
-			<h4 class="pull-right menu-item">Portfolio</h4>				
-			<h4 class="pull-right menu-item">About Me</h4>				
-		</div>
-    	<h1 class="jumbo-title font-white">Sparked an idea; <br> Let's create.</h1>
+  <body id="home" ng-controller="homeCtrl">
+  <div class="parallax container-fluid">
+    <div class="parallax__group group1"> <!-- Section 1 -->
+      <div id="section-front" class="parallax__layer parallax__layer--back back"> <!-- Section 1 Background Layer -->
+          <h1 class="page-desc-extra-padding font-white">by Adrian Malaran</h1>
       </div>
-      <div class="parallax__layer parallax__layer--back">
-      	<img src="images/water.jpg" alt="">
-        <h1 class="page-desc-extra-padding font-white">by Adrian Malaran</h1>
+      <div class="parallax__layer parallax__layer--base base"> <!-- Section 2 Base Layer -->
+      <div class="menu-bar">
+        <h4 class="pull-left menu-item-strong">Adrian Malaran</h4>
+        <h4 class="pull-right menu-item">Portfolio</h4>       
+        <h4 class="pull-right menu-item">About Me</h4>
+        <h4 class="pull-right menu-item">Resume</h4>
+        <a href="https://github.com/AdrianMalaran">
+          <h4 class="pull-right font-white menu-item">GitHub</h4>
+        </a>
       </div>
-    </div>
-
-    <div class="cover">
-    	Hello.
-    </div>
-
-
-
-    <div id="group2" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
-      </div>
-      <div class="parallax__layer parallax__layer--back">
-        <div class="title">Background Layer</div>
+        <h1 class="jumbo-title font-white">Sparked an idea; <br> Let's create.</h1>
       </div>
     </div>
-
-
-    <div id="group3" class="parallax__group">
-      <div class="parallax__layer parallax__layer--fore">
-        <div class="title">Foreground Layer</div>
-      </div>
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
-      </div>
-    </div>
-
-
-    <div id="group4" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
-      </div>
-      <div class="parallax__layer parallax__layer--back">
-        <div class="title">Background Layer</div>
-      </div>
-      <div class="parallax__layer parallax__layer--deep">
-        <div class="title">Deep Background Layer</div>
-      </div>
-    </div>
-
-
-
-    <div id="group5" class="parallax__group">
-      <div class="parallax__layer parallax__layer--fore">
-        <div class="title">Foreground Layer</div>
-      </div>
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
-      </div>
-    </div>
-
-
-
-    <div id="group6" class="parallax__group">
-      <div class="parallax__layer parallax__layer--back">
-        <div class="title">Background Layer</div>
-      </div>
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
-      </div>
-    </div>
-
-
-
-    <div id="group7" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">Base Layer</div>
+  
+  <div class="parallax__group group2"> <!-- Section 2 -->
+    <div class="parallax__layer parallax__layer--base base">
+      <div class="page-desc-center-padding">
+        <h1 class="font-black">Hello. I'm Adrian.</h1>
       </div>
     </div>
   </div>
 
+    <div class="parallax__group group2"> <!-- Section 2 -->
+    <div id="section-info" class="parallax__layer parallax__layer--base base"> <!-- Section 2 Base -->
+  
+      <div  class="parallax__layer parallax__layer--fore">
+        <div id="about-me-par" class="page-desc-center-padding">
+          <h2 class="font-white" style="font-size:4vh">About Me</h2>
+          <p class="font-white" style="font-size:3vh;">
+            I am a Mechatronics Engineering student studying at the University of Waterloo. 
+            <br>
+            Driven by my passion for robotics, dance, and adventure, I focus on self-improvement by self-learning.
+            <br>
+            I'd also like to thankyou for visitng my website.
+          </p>
+        </div>
+      
+      </div>
+    </div>
+
+    <div></div>
+    </div>
 
 
 
+    <div class="parallax__group group3"> <!-- Section 3 -->
+      <div class="parallax__layer parallax__layer--back back"><!-- Section Background 3 -->
+
+      </div>
+    <div class="parallax__layer parallax__layer--base base"> <!-- Section Base 3-->
+      <div class="page-desc-center-padding">
+        <h2 class="section-title">-- Projects --</h2>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="parallax__group group4"> <!-- Section 1 -->
+    <div class="parallax__layer parallax__layer--back back"> <!-- Section 1 Background Layer -->
+
+    </div>
+    <div class="parallax__layer parallax__layer--base base"> <!-- Section 2 Base Layer -->
+
+      <!-- HACKATHON -->
+      <!-- <div class="project">
+        <div class="row">
+          <div id="picture-trakrecord-left" class="col-md-6 picture-left">
+            
+          </div>
+          <div id="picture-trakrecord-right" class="col-md-6 picture-right">
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 project-trakrecord">
+            <div class="title pull-left">
+              TRAKRECORD
+              <br>
+              (ANDROID) 
+              <br>
+              TUNER
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="content pull-left"> 
+              Constructed and configured an autonomous NXT Robotics system that utilizes unique sensors to measure pitch and simpulate a personalized machine.
+              <br>
+              <br>
+              Programmed the system to independently interpret the pitch and engage the mechanical components accodingly to adjust the tensionin the strings to the correct pitch.
+            </div>
+          </div>
+        </div>  
+      </div> -->
+      <!-- UKULELE -->
+      <div class="project">
+        <div class="row">
+          <div id="picture-ukulele-left" class="col-md-6 picture-left">
+            
+          </div>
+          <div id="picture-ukulele-right" class="col-md-6 picture-right">
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 project-ukulele">
+            <div class="title pull-left">
+              AUTONOMOUS
+              <br>
+              UKULELE 
+              <br>
+              TUNER
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="content pull-left"> 
+              Constructed and configured an autonomous NXT Robotics system that utilizes unique sensors to measure pitch and simpulate a personalized machine.
+              <br>
+              <br>
+              Programmed the system to independently interpret the pitch and engage the mechanical components accodingly to adjust the tensionin the strings to the correct pitch.
+            </div>
+          </div>
+        </div>  
+      </div>
+      
+
+
+    </div>
+  </div>
+
+  <div class="parallax__group group5"> <!-- Section 1 -->
+    <div class="parallax__layer parallax__layer--back back"> <!-- Section 1 Background Layer -->
+
+    </div>
+    <div class="parallax__layer parallax__layer--base base"> <!-- Section 2 Base Layer -->
+      
+    </div>
+  </div>
+    
+
+    <div class="parallax__group group5"> <!-- Group 1 -->
+      <div class="parallax__layer parallax__layer--back back"><!-- Background Layer -->
+      </div>
+    <div id="section-contact" class="parallax__layer parallax__layer--base base"> <!-- Base Layer -->
+      <div class="row top-bottom-border small-padding-top small-padding-bottom">
+        <h2> <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> (905) 749-1916</h2>
+        
+        <h2><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> adrian.malaran@uwaterloo.ca</h2>
+
+        <br>
+        
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-6 contact" ng-hide="messageSent">
+          <div class="row">
+            <h2 class="pull-left small-padding-left small-padding-top">Contact</h2>
+          </div>
+          <input class="pull-left contact-section contact-name" ng-model="contactInfo.name" type="text" placeholder="Name">
+          <input id="email" class="pull-right contact-section contact-email" ng-model="contactInfo.email" ng-change="checkEmail()" type="text" placeholder="Email">
+          <br>
+          <textarea class="pull-left contact-section contact-message" ng-model="contactInfo.message" name="Text1" cols="20" rows="5" placeholder="Message"></textarea>
+          <div class="btn btn-primary" ng-disabled="checkIfValid()" ng-click="contactMe()"><h3>Contact Me</h3></div>
+        </div>
+        <div class="col-lg-6 contact-filler" ng-show="messageSent">
+          <h2>Thank you for your message!</h2> 
+          <br>
+          <div class="btn btn-primary" ng-click="sendAnother()"><h3>Send Another</h3></div>
+        </div>
+        <div class="col-lg-3">
+        </div>
+      </div>
+      <div class="footer-wrapper">
+        <h3 class="font-white center-text small-padding-top bold-text">created using </h3>
+        <a href="http://www.facebook.com/squarespace" target="_blank" class="font-white sqs-svg-icon--wrapper facebook" style=""><div><svg class="sqs-svg-icon--social"></svg></div></a>
+      </div>
+    </div>
+    </div>
+    
+  </div>
   </body>
 </html>

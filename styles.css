@@ -7,226 +7,357 @@
 /*// Home Template // */
 /*////////////////////*/
 /*////////////////////*/
-
-/* Parallax base styles
-  --------------------------------------------- */
-
-  .parallax {
-    height: 500px; /* fallback for older browsers */
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 300px;
-    perspective: 300px;
-    -webkit-perspective-origin-x: 100%;
-    perspective-origin-x: 100%;
-  }
-
-  .parallax__group {
-    position: relative;
-    height: 500px; /* fallback for older browsers */
-    height: 100vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
-
-  .parallax__layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    -webkit-transform-origin-x: 100%;
-    transform-origin-x: 100%;
-  }
-
-  .parallax__layer--fore {
-    -webkit-transform: translateZ(90px) scale(.7);
-    transform: translateZ(90px) scale(.7);
-    z-index: 1;
-  }
-
-  .parallax__layer--base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    z-index: 4;
-  }
-
-  .parallax__layer--back {
-    -webkit-transform: translateZ(-300px) scale(2);
-    transform: translateZ(-300px) scale(2);
-    z-index: 3;
-  }
-
-  .parallax__layer--deep {
-    -webkit-transform: translateZ(-600px) scale(3);
-    transform: translateZ(-600px) scale(3);
-    z-index: 2;
-  }
-
-
-  /* demo styles
-  --------------------------------------------- */
-
-  body, html {
-    overflow: hidden;
-  }
-
-  body {
-    font: 100% / 1.5 Arial;
-  }
-
-  * {
-    margin:0;
-    padding:0;
-  }
-
-  .parallax {
-    font-size: 200%;
-  }
-
-   /* centre the content in the parallax layers */
-  .title {
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
-
-
-  /* style the groups
-  --------------------------------------------- */
-
-  #group1 {
-    z-index: 5; /* slide over group 2 */
-  }
-  #group1 .parallax__layer--base {
-    /*background:red;*/
-  }
-  #group1 .parallax__layer--back {
-    height: 78vh;
-    background: url('images/water.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: -1vh;
-    margin-top: -14vh;
-    z-index: 4;
-  }
-
-  #group2 {
-    z-index: 3; /* slide under groups 1 and 3 */
-  }
-  #group2 .parallax__layer--back {
-    background: rgb(123,210,102);
-  }
-  #group2 .parallax__layer--base {
-    background: rgb(123,210,102);
-    z-index:6;
-  }
-
-  #group3 {
-    z-index: 4; /* slide over group 2 and 4 */
-  }
-  #group3 .parallax__layer--base {
-    background: rgb(153,216,101);
-  }
-
-  #group4 {
-    z-index: 2; /* slide under group 3 and 5 */
-  }
-  #group4 .parallax__layer--deep {
-    background: rgb(184,223,101);
-  }
-
-  #group5 {
-    z-index: 3; /* slide over group 4 and 6 */
-  }
-  #group5 .parallax__layer--base {
-    background: rgb(214,229,100);
-  }
-
-  #group6 {
-    z-index: 2; /* slide under group 5 and 7 */
-  }
-  #group6 .parallax__layer--back {
-    background: rgb(245,235,100);
-  }
-
-  #group7 {
-    z-index: 3; /* slide over group 7 */
-  }
-  #group7 .parallax__layer--base {
-    background: rgb(255,241,100);
-  }
-
-  /* FRONT COVER */
-  .cover {
-    background:white;
-    z-index: 10;
-    height:100vh;
-    width:100%;
-    
-  }
-
-  /* CONTROLS THE FRONT JUMBOTRON AREA*/
-  .jumbo-title {
+#home {
+  font-family: 'Quicksand', sans-serif;
+  /* SECTION 1*/
+  /*Handles the Jumbotron */
+  /* GREETINGS SCREEN/ABOUT ME SCREEN*/
+  /* SECTION 3  PROJECTS*/
+  /* SECTION 4 */
+}
+#home * {
+  margin: 0;
+  padding: 0;
+}
+#home body {
+  height: 100vh;
+  width: 100vh;
+}
+#home .center-text {
+  text-align: center;
+}
+#home .small-padding-top {
+  padding-top: 2vh;
+}
+#home .small-padding-bottom {
+  padding-bottom: 2vh;
+}
+#home .small-padding-left {
+  padding-left: 2vh;
+}
+#home .small-padding-right {
+  padding-right: 2vh;
+}
+#home .bold-text {
+  font-weight: bolder;
+}
+#home .parallax {
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+#home .parallax__layer {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#home .parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+}
+#home .parallax__layer--back {
+  height: 100vh;
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+  text-align: center;
+  vertical-align: -250px;
+  overflow: hidden;
+  z-index: 0;
+}
+#home .parallax__layer--deep {
+  -webkit-transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
+}
+#home .parallax__group {
+  position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#home .parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(0.7);
+  transform: translateZ(90px) scale(0.7);
+  z-index: 1;
+}
+#home .parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
+}
+#home .jumbo-title {
   font-weight: bolder;
   font-size: 10vh;
   color: white;
   padding-top: 10vh;
   font-family: 'Questrial', sans-serif;
-  text-align:center;
-  }
-  .menu-bar {
-    width: 100%;
-    height: 9.6vh;
-    position: fixed;
-    font-size: 10vh;
-    color: white;
-  }
-  .menu-bar .menu-item {
-    padding-top: 4vh;
-    padding-left: 5vh;
-    padding-bottom: 5vh;
-    padding-right: 5vh;
-    font-family: 'Questrial', sans-serif;
-    font-size: 2.5vh;
-    font-weight: bolder;
-  }
-  .menu-bar .menu-item:hover {
-    padding-top: 4vh;
-    padding-left: 5vh;
-    padding-bottom: 5vh;
-    padding-right: 5vh;
-    font-family: 'Questrial', sans-serif;
-    font-size: 2.5vh;
-    font-weight: bolder;
-    opacity: 0.5;
-    cursor: pointer;
-  }
-  .menu-bar .menu-item-strong {
-    padding-top: 4vh;
-    padding-left: 5vh;
-    padding-bottom: 5vh;
-    padding-right: 5vh;
-    font-family: 'Questrial', sans-serif;
-    font-size: 2.5vh;
-    font-weight: bolder;
-  }
-
-
-
-  /* misc
-  --------------------------------------------- */
-  .demo__info {
-    position: absolute;
-    z-index:100;
-    bottom: 1vh;
-    top: auto;
-    font-size:80%;
-    text-align:center;
-    width: 100%;
-  }
+}
+#home .menu-bar {
+  width: 100%;
+  height: 9.6vh;
+  position: fixed;
+  font-size: 10vh;
+  color: white;
+}
+#home .menu-bar .menu-item {
+  padding-top: 4vh;
+  padding-left: 4vh;
+  padding-bottom: 5vh;
+  padding-right: 4vh;
+  font-family: 'Questrial', sans-serif;
+  font-size: 2.5vh;
+}
+#home .menu-bar .menu-item:hover {
+  padding-top: 4vh;
+  padding-left: 4vh;
+  padding-bottom: 5vh;
+  padding-right: 4vh;
+  font-family: 'Questrial', sans-serif;
+  font-size: 2.5vh;
+  font-weight: bolder;
+  opacity: 0.5;
+  cursor: pointer;
+}
+#home .menu-bar .menu-item-strong {
+  padding-top: 4vh;
+  padding-left: 5vh;
+  padding-bottom: 5vh;
+  padding-right: 5vh;
+  font-family: 'Questrial', sans-serif;
+  font-size: 2.5vh;
+  font-weight: bolder;
+}
+#home .group1 .back {
+  height: 78vh;
+  background: url('images/water.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -1vh;
+  margin-top: -14vh;
+  z-index: 4;
+}
+#home .group1 .base {
+  height: 80vh;
+  z-index: 5;
+}
+#home .group2 .back {
+  padding-top: -10vh;
+  z-index: 3;
+  width: 100%;
+}
+#home .group2 .base {
+  background: white;
+  margin-top: -20vh;
+  border-bottom: #0e191d 20px solid;
+  height: 100vh;
+  z-index: 4;
+}
+#home .group3 .back {
+  height: 100vh;
+  padding-top: 1vh;
+  z-index: 2;
+  margin-left: -2vh;
+  margin-bottom: -20vh;
+  margin-left: -30vh;
+}
+#home .group3 .base {
+  z-index: 3;
+  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#17272f), to(black));
+  background: linear-gradient(0, #17272f, black);
+  margin-top: -20vh;
+  padding-top: 4vh;
+  font-family: 'Questrial', sans-serif;
+  z-index: 1;
+}
+#home .group4 .back {
+  padding-top: 1vh;
+  width: 120%;
+  height: 60vh;
+  margin-left: -2vh;
+}
+#home .group4 .base {
+  background: #17272f;
+  margin-top: -20vh;
+}
+#home .group5 .back {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home .about-me-sec {
+  height: 40vh;
+  width: 40vh;
+}
+#home .btn-primary {
+  color: black;
+  width: auto;
+  padding: 1vh;
+  margin: 2vh;
+  border: none;
+  font-size: 2vh;
+  background-color: white;
+  color: #9ca9b0;
+  border: #9ca9b0 solid 1px;
+}
+#home .btn-primary:hover {
+  opacity: 0.5;
+}
+#home .jumbo-title {
+  padding-top: 26vh;
+  color: black;
+  font-size: 12vh;
+}
+#home .page-desc {
+  color: black;
+  margin-top: 29vh;
+  height: auto;
+  font-size: 2vh;
+}
+#home .page-desc-center-padding {
+  margin-top: 42vh;
+  height: auto;
+  font-size: 2vh;
+}
+#home .page-desc-extra-padding {
+  color: black;
+  padding-top: 56vh;
+}
+#home .page-desc-less-padding {
+  color: black;
+  padding-top: 56vh;
+}
+#home .footer-wrapper {
+  height: 40vh;
+  background-color: black;
+  margin-top: 10vh;
+  position: bottom;
+  font-family: 'Questrial', sans-serif;
+}
+#home .top-bottom-border {
+  border: #9ca9b0 1px solid;
+}
+#home .light-grey-background {
+  background: ;
+}
+#home .contact {
+  border: #9ca9b0 1px solid;
+  height: 50vh;
+  background: white;
+}
+#home .contact-filler {
+  height: 50vh;
+  padding-top: 18vh;
+}
+#home .contact-section {
+  padding: 2vh;
+  margin: 5%;
+  margin-bottom: 2%;
+}
+#home .contact-name {
+  width: 40%;
+}
+#home .contact-email {
+  width: 40%;
+}
+#home .contact-message {
+  width: 90%;
+}
+#home #section-contact {
+  margin-top: -15vh;
+  padding-top: 4vh;
+  z-index: 1;
+}
+#home #section-info {
+  background: url('images/tower01.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home .section-title {
+  font-size: 8vh;
+  color: white;
+  font-family: 'Questrial', sans-serif;
+}
+#home #about-me-par {
+  background: black;
+  opacity: 0.2;
+  padding: 2vh;
+}
+#home #about-me-par:hover {
+  background: black;
+  opacity: 0.8;
+  padding: 2vh;
+}
+#home .project {
+  border: #121f25 5px solid;
+  margin-top: 2vh;
+  color: white;
+  background: black;
+}
+#home .project .title {
+  font-size: 5vh;
+  padding-left: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  text-align: left;
+  font-family: 'Questrial', sans-serif;
+  border-top: 2px white solid;
+  border-bottom: 2px white solid;
+}
+#home .project .picture-left {
+  width: 50%;
+  height: 45vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: black 5px solid;
+}
+#home .project .picture-right {
+  width: 50%;
+  height: 45vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: black 5px solid;
+}
+#home .project .content {
+  font-size: 2vh;
+  padding: 1vh;
+  border-top: white 10px solid;
+  border-left: white 10px solid;
+  text-align: left;
+  height: auto;
+}
+#home #picture-ukulele-left {
+  background: url('images/ukulele03.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 50%;
+}
+#home #picture-ukulele-right {
+  background: url('images/ukulele02.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 50%;
+}
+#home #project-ukulele {
+  border: 2px red solid;
+}
+#home .font-black {
+  color: black;
+}
+#home .font-white {
+  color: white;
+}
+#home .font-blue-grey {
+  color: #123a49;
+}
+#home .font-blue-grey {
+  color: #a9cfe2;
+}
