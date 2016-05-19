@@ -136,8 +136,8 @@
   font-size: 2.5vh;
   font-weight: bolder;
 }
-#home .group1 .back {
-  height: 78vh;
+#home .group-opener .back {
+  height: 90vh;
   background: url('images/water.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,9 +145,21 @@
   margin-top: -14vh;
   z-index: 4;
 }
-#home .group1 .base {
+#home .group-opener .base {
   height: 80vh;
   z-index: 5;
+}
+#home .group1 .back {
+  padding-top: -10vh;
+  z-index: 3;
+  width: 100%;
+}
+#home .group1 .base {
+  margin-top: -15vh;
+  background: white;
+  border-bottom: #0e191d 20px solid;
+  height: 100vh;
+  z-index: 4;
 }
 #home .group2 .back {
   padding-top: -10vh;
@@ -156,7 +168,7 @@
 }
 #home .group2 .base {
   background: white;
-  margin-top: -20vh;
+  margin-top: -15vh;
   border-bottom: #0e191d 20px solid;
   height: 100vh;
   z-index: 4;
@@ -171,15 +183,19 @@
 }
 #home .group3 .base {
   z-index: 3;
-  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#183545), to(black));
-  background: linear-gradient(0, #183545, black);
+  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#f1f3f0), to(#e5e7e4));
+  background: linear-gradient(0, #f1f3f0, #e5e7e4);
   margin-top: -20vh;
   padding-top: 4vh;
   font-family: 'Questrial', sans-serif;
   z-index: 1;
 }
 #home .group4 {
-  background: #17272f;
+  /*background:@darker-grey;*/
+  background: url('images/waves01.jpg');
+  background-position: 60% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: -20vh;
   height: 170vh;
 }
@@ -286,28 +302,58 @@
 }
 #home .section-title {
   font-size: 8vh;
-  color: white;
+  color: black;
   font-family: 'Questrial', sans-serif;
 }
-#home #about-me-par {
-  background: black;
-  opacity: 0.2;
-  padding: 2vh;
+#home #opening-quote1 {
+  opacity: 0;
+  font-size: 2.5vh;
 }
-#home #about-me-par:hover {
-  background: black;
-  opacity: 0.8;
+#home #opening-quote2 {
+  opacity: 0;
+  font-size: 2.5vh;
+}
+#home #opening-quote3 {
+  opacity: 0;
+  font-size: 8vh;
+}
+#home #ending-quote1 {
+  opacity: 0;
+  font-size: 2.5vh;
+}
+#home #ending-quote2 {
+  opacity: 0;
+  font-size: 2.5vh;
+}
+#home #ending-quote3 {
+  opacity: 0;
+  font-size: 2.5vh;
+}
+#home #ending-quote4 {
+  opacity: 0;
+  font-size: 2.5vh;
+}
+#home #ending-quote5 {
+  opacity: 0;
+  font-size: 7vh;
+  color: white;
+}
+#home #about-me-par {
+  background: white;
+  color: black;
+  opacity: 0.2;
   padding: 2vh;
 }
 #home .project {
   border: #121f25 5px solid;
   margin-bottom: 5vh;
   margin-top: 5vh;
-  color: white;
-  background: #183545;
+  color: black;
+  background: white;
+  opacity: 0;
 }
 #home .project .title {
-  font-size: 5vh;
+  font-size: 5.5vh;
   padding-left: 2vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -331,8 +377,7 @@
 #home .project .content {
   font-size: 2vh;
   padding: 1vh;
-  border-top: white 5px solid;
-  border-left: white 5px solid;
+  border-left: black 5px solid;
   text-align: left;
   height: 100%;
   width: 100%;
