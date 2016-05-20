@@ -4,11 +4,11 @@ $(document).ready(function() {
 
 
    $('#about-me-par').mouseenter(function() {
-       $(this).fadeTo('slow', 0.7);
+       $(this).fadeTo('fast', 1);
    });
 
    $('#about-me-par').mouseleave(function() {
-       $(this).fadeTo('slow', 0.2);
+       $(this).fadeTo('fast', 0.2);
    });
 
    $('.group1').mouseenter(function() {
@@ -17,11 +17,11 @@ $(document).ready(function() {
        $('#opening-quote3').delay(1200).fadeTo('slow', 0.8);
    });
 
-   $('.group1').mouseleave(function() {
-       $('#opening-quote1').fadeTo('slow', 0);
-       $('#opening-quote2').fadeTo('slow', 0);
-       $('#opening-quote3').fadeTo('slow', 0);
-   });
+   // $('.group1').mouseleave(function() {
+   //    $('#opening-quote1').fadeTo('slow', 0);
+   //    $('#opening-quote2').fadeTo('slow', 0);
+   //    $('#opening-quote3').fadeTo('slow', 0);
+   // });
 
 
    $('.group5').mouseenter(function() {
@@ -47,7 +47,7 @@ $(document).ready(function() {
    });
 
    $('.project').mouseleave(function() {
-       $(this).fadeTo('fast', 0);
+       $(this).fadeTo('fast', 0.1);
    });
 
    // $('div').mouseleave(function() {
