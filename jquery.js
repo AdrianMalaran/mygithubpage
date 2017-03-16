@@ -7,9 +7,9 @@ $(document).ready(function() {
        $(this).fadeTo('fast', 1);
    });
 
-   $('#about-me-par').mouseleave(function() {
-       $(this).fadeTo('fast', 0.2);
-   });
+//   $('#about-me-par').mouseleave(function() {
+//      $(this).fadeTo('fast', 0.2);
+//   });
 
    $('.group1').mouseenter(function() {
        $('#opening-quote1').fadeTo('fast', 0.8);
