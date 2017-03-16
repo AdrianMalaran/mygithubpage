@@ -1,5 +1,5 @@
 
-console.log("I AM HERE");
+console.log("This is a secret message ;)");
 $(document).ready(function() {
 
 
@@ -12,8 +12,8 @@ $(document).ready(function() {
    });
 
    $('.group1').mouseenter(function() {
-       $('#opening-quote1').fadeTo('slow', 0.8);
-       $('#opening-quote2').delay(1200).fadeTo('slow', 0.8);
+       $('#opening-quote1').fadeTo('fast', 0.8);
+       $('#opening-quote2').delay(1200).fadeTo('fast', 0.8);
        $('#opening-quote3').delay(1200).fadeTo('slow', 0.8);
    });
 
@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 
    $('.project').mouseenter(function() {
-       $(this).fadeTo('slow', 0.8);
+       $(this).fadeTo('fast', 0.8);
    });
 
    $('.project').mouseleave(function() {
