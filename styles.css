@@ -21,23 +21,9 @@
 }
 #home body {
   height: 100vh;
-  width: 100vh;
+  width: 50vh;
 }
-#home .center-text {
-  text-align: center;
-}
-#home .small-padding-top {
-  padding-top: 2vh;
-}
-#home .small-padding-bottom {
-  padding-bottom: 2vh;
-}
-#home .small-padding-left {
-  padding-left: 2vh;
-}
-#home .small-padding-right {
-  padding-right: 2vh;
-}
+
 #home .bold-text {
   font-weight: bolder;
 }
@@ -45,7 +31,8 @@
   -webkit-perspective: 1px;
   perspective: 1px;
   height: 100vh;
-  overflow: hidden;
+  width:80%;
+  /*overflow: hidden;*/
   overflow-y: auto;
   position: relative;
 }
@@ -60,7 +47,6 @@
 #home .parallax__layer--base {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  text-align: center;
   overflow: hidden;
   z-index: 1;
   height: 100%;
@@ -69,7 +55,7 @@
   height: 100vh;
   -webkit-transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
-  text-align: center;
+  /*text-align: center;*/
   vertical-align: -250px;
   overflow: hidden;
   z-index: 0;
@@ -90,42 +76,33 @@
   z-index: 1;
   width: 100%;
 }
-#home .parallax__layer--deep {
+/*#home .parallax__layer--deep {
   -webkit-transform: translateZ(-600px) scale(3);
   transform: translateZ(-600px) scale(3);
   z-index: 2;
-}
+}*/
 #home .jumbo-title {
   font-weight: bolder;
-  font-size: 10vh;
-  color: white;
+  font-size: 11vh;
   padding-top: 10vh;
-  font-family: 'Questrial', sans-serif;
+  font-family:'Questrial', sans-serif;
 }
 #home .menu-bar {
   width: 100%;
   height: 9.6vh;
   position: fixed;
   font-size: 10vh;
-  color: white;
+  background-color: white;
+  opacity:0.3;
 }
 #home .menu-bar .menu-item {
-  padding-top: 4vh;
+  color:black;
+  font-weight: bolder;
   padding-left: 4vh;
-  padding-bottom: 5vh;
   padding-right: 4vh;
+  padding-top: 4vh;
   font-family: 'Questrial', sans-serif;
   font-size: 2.5vh;
-}
-#home .menu-bar .menu-item:hover {
-  padding-top: 4vh;
-  padding-left: 4vh;
-  padding-bottom: 5vh;
-  padding-right: 4vh;
-  font-family: 'Questrial', sans-serif;
-  font-size: 2.5vh;
-  opacity: 0.5;
-  cursor: pointer;
 }
 #home .menu-bar .menu-item-strong {
   padding-top: 4vh;
@@ -137,85 +114,94 @@
   font-weight: bolder;
 }
 #home .group-opener .back {
-  height: 90vh;
-  background: url('images/water.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 80vh;
+  width:100%;
   margin-left: -1vh;
-  margin-top: -14vh;
   z-index: 4;
 }
 #home .group-opener .base {
-  height: 80vh;
   z-index: 5;
+  background: url('images/skyline.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #E38F7D
 }
-#home .group1 .back {
-  padding-top: -10vh;
-  z-index: 3;
-  width: 100%;
+#home .group0{
+  background: url('images/clouds1.jpg');
+  background-position: center;
 }
 #home .group1 .base {
-  margin-top: -15vh;
-  background: white;
-  border-bottom: #0e191d 20px solid;
-  height: 100vh;
-  z-index: 4;
-}
-#home .group2 .back {
-  padding-top: -10vh;
-  z-index: 3;
-  width: 100%;
+  border-top:#e5e7e4 solid 50px;
+  border-bottom:#e5e7e4 solid 50px;
+  text-align: right;
+  padding-right: 10%;
+  font-weight:bolder;
+  background: url('images/waves3.jpg');
+  background-position: center;
 }
 #home .group2 .base {
   background: white;
-  margin-top: -15vh;
   border-bottom: #0e191d 20px solid;
   height: 100vh;
   z-index: 4;
 }
-#home .group3 .back {
-  height: 100vh;
-  padding-top: 1vh;
-  z-index: 2;
-  margin-left: -2vh;
-  margin-bottom: -20vh;
-  margin-left: -30vh;
+
+#home .group-experience{
+  height:50vh;
+  /*background: url('images/clouds2.jpg');*/
+  /*background-size: cover;*/
+  /*background-position: center;*/
+  background: black;
 }
-#home .group3 .base {
+
+#home .group3 {
+  height:30vh;
   z-index: 3;
-  background-color: #f1f3f0;
-  /* fallback color if gradients are not supported */
-  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  /* For Firefox (3.6 to 15) */
-  /* For old Opera (11.1 to 12.0) */
   background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#f1f3f0), to(#e5e7e4));
   background: linear-gradient(0, #f1f3f0, #e5e7e4);
-  /* Standard syntax; must be last */
-  margin-top: -20vh;
-  padding-top: 4vh;
   font-family: 'Questrial', sans-serif;
-  z-index: 1;
+  font-weight: bolder;
+}
+#home .group3 #group3-col1{
+  margin-top:2vh;
+  /*background: black;*/
+  height:30vh;
+}
+#home .group3 #group3-col2{
+  margin-top:2vh;
+  border-top:black solid 10px;
+  border-bottom: black solid 10px;
+  height:28vh;
+}
+#home .group3 #group3-col3{
+  margin-top:2vh;
+  /*background: black;*/
+  height:30vh;
 }
 #home .group4 {
-  /*background:@darker-grey;*/
   background: url('images/waves01.jpg');
+  height:200vh;
   background-position: 60% 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -20vh;
-  height: 170vh;
+  position: relative;
 }
 #home .group5 {
-  z-index: 100;
-  height: 40vh;
   font-family: 'Quicksand', sans-serif;
   background: black;
   color: white;
-  position: absolute;
-  height: 50vh;
-  width: 100%;
-  text-align: center;
+  text-align: left;
   padding: 2vh;
+  position:relative;
+}
+#home .group5 #group-5-col2{
+  border-left:white solid;
+  padding-left: 2%;
+}
+#home .group5 #group-5-row2{
+  padding-left: 2%;
+  text-align:center;
 }
 #home .about-me-sec {
   height: 40vh;
@@ -237,8 +223,9 @@
 }
 #home .jumbo-title {
   padding-top: 26vh;
-  color: black;
+  opacity:0.6;
   font-size: 12vh;
+  color:black;
 }
 #home .page-desc {
   color: black;
@@ -247,7 +234,7 @@
   font-size: 2vh;
 }
 #home .page-desc-center-padding {
-  margin-top: 42vh;
+  margin-top: 10vh;
   height: auto;
   font-size: 2vh;
 }
@@ -308,48 +295,56 @@
 }
 #home .section-title {
   font-size: 8vh;
+  padding-top: 10vh;
   color: black;
+  text-align:center;
   font-family: 'Questrial', sans-serif;
 }
 #home #opening-quote1 {
-  opacity: 0;
+  opacity: 1;
   font-size: 2.5vh;
+  color:white;
+  font-family: 'Quicksand', sans-serif;
 }
 #home #opening-quote2 {
   opacity: 0;
+  color:white;
   font-size: 2.5vh;
 }
 #home #opening-quote3 {
   opacity: 0;
+  color:white;
   font-size: 8vh;
 }
 #home #ending-quote1 {
-  opacity: 0;
+  opacity: 0.6;
   font-size: 2.5vh;
 }
 #home #ending-quote2 {
-  opacity: 0;
+  opacity: 0.6;
   font-size: 2.5vh;
 }
 #home #ending-quote3 {
-  opacity: 0;
+  opacity: 0.6;
   font-size: 2.5vh;
 }
 #home #ending-quote4 {
-  opacity: 0;
+  opacity: 0.6;
   font-size: 2.5vh;
 }
 #home #ending-quote5 {
-  opacity: 0;
+  opacity: 0.6;
   font-size: 7vh;
   color: white;
 }
 #home #about-me-par {
-  background: white;
-  color: black;
-  opacity: 0.4;
+  /*background: black;*/
+  color: white;
+  opacity: 0.6;
   padding: 2vh;
   width: auto;
+  margin-left:10%;
+  margin-top:5vh;
 }
 #home .project {
   border: #121f25 5px solid;

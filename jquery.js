@@ -1,5 +1,5 @@
 
-console.log("This is a secret message ;)");
+console.log("I AM HERE");
 $(document).ready(function() {
 
 
@@ -7,13 +7,13 @@ $(document).ready(function() {
        $(this).fadeTo('fast', 1);
    });
 
-//   $('#about-me-par').mouseleave(function() {
-//      $(this).fadeTo('fast', 0.2);
-//   });
+   $('.group2').mouseleave(function() {
+       $('#about-me-par').fadeTo('fast', 1);
+   });
 
    $('.group1').mouseenter(function() {
-       $('#opening-quote1').fadeTo('fast', 0.8);
-       $('#opening-quote2').delay(1200).fadeTo('fast', 0.8);
+       $('#opening-quote1').fadeTo('slow', 0.8);
+       $('#opening-quote2').delay(1200).fadeTo('slow', 0.8);
        $('#opening-quote3').delay(1200).fadeTo('slow', 0.8);
    });
 
@@ -43,11 +43,11 @@ $(document).ready(function() {
 
 
    $('.project').mouseenter(function() {
-       $(this).fadeTo('fast', 0.8);
+       $(this).fadeTo('fast', 1);
    });
 
    $('.project').mouseleave(function() {
-       $(this).fadeTo('fast', 0.1);
+       $(this).fadeTo('fast', 0.8);
    });
 
    // $('div').mouseleave(function() {
