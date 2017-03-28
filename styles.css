@@ -8,7 +8,7 @@
 /*////////////////////*/
 /*////////////////////*/
 #home {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Questrial', sans-serif;
   /* SECTION 1*/
   /*Handles the Jumbotron */
   /* GREETINGS SCREEN/ABOUT ME SCREEN*/
@@ -140,21 +140,57 @@
   background: url('images/waves3.jpg');
   background-position: center;
 }
-#home .group2 .base {
-  background: white;
-  border-bottom: #0e191d 20px solid;
-  height: 100vh;
-  z-index: 4;
+#home #about-me-par {
+  color: black;
+  opacity: 0.6;
+  padding: 2vh;
+  width: auto;
+  margin-left:10%;
+  margin-top:5vh;
 }
 
 #home .group-experience{
-  height:50vh;
-  /*background: url('images/clouds2.jpg');*/
+  /*background: ;*/
   /*background-size: cover;*/
   /*background-position: center;*/
-  background: black;
+  background: url('images/clouds3.jpg');
+  background-position: center;
+  border-top:50px solid #e5e7e4;
 }
-
+#home .group-experience #group-experience-row1{
+}
+#home .group-experience #group-experience-col1{
+  border-bottom: white solid 5px;
+  font-size:8vh;
+  font-family:'Questrial', sans-serif;
+  color:white;
+  padding-left:1vh;
+}
+#home .group-experience #group-experience-col2{
+  border-left:10px white solid;
+}
+#home .group-experience #group-experience-col2 #group-experience-col2-row1{
+ color:white;
+ font-size:5vh;
+ margin-top: 2vh;
+ margin-right: 5%;
+ padding-left: 2%;
+ padding-bottom: 1vh;
+ border-bottom:white solid 5px;
+}
+#home .group-experience #group-experience-col2 #group-experience-col2-row2{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+#home .group-experience #group-experience-col2 #group-experience-col2-row3{
+ color:white;
+ font-size:5vh;
+ margin-top: 2vh;
+ margin-right: 5%;
+ padding-left: 2%;
+ padding-bottom: 1vh;
+ border-bottom:white solid 5px;
+}
 #home .group3 {
   height:30vh;
   z-index: 3;
@@ -188,7 +224,7 @@
   position: relative;
 }
 #home .group5 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Questrial', sans-serif;
   background: black;
   color: white;
   text-align: left;
@@ -288,8 +324,8 @@
   z-index: 1;
 }
 #home #section-info {
-  background: url('images/tower01.jpg');
-  background-position: center;
+  background: url('images/falls1.jpg');
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -304,7 +340,7 @@
   opacity: 1;
   font-size: 2.5vh;
   color:white;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 #home #opening-quote2 {
   opacity: 0;
@@ -336,15 +372,6 @@
   opacity: 0.6;
   font-size: 7vh;
   color: white;
-}
-#home #about-me-par {
-  /*background: black;*/
-  color: white;
-  opacity: 0.6;
-  padding: 2vh;
-  width: auto;
-  margin-left:10%;
-  margin-top:5vh;
 }
 #home .project {
   border: #121f25 5px solid;

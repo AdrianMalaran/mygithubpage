@@ -13,9 +13,10 @@ $(document).ready(function() {
 
    $('.group1').mouseenter(function() {
        $('#opening-quote1').fadeTo('slow', 0.8);
-       $('#opening-quote2').delay(1200).fadeTo('slow', 0.8);
-       $('#opening-quote3').delay(1200).fadeTo('slow', 0.8);
+       
    });
+   $('#opening-quote2').delay(3000).fadeTo('slow', 0.8);
+   $('#opening-quote3').delay(3000).fadeTo('slow', 0.8);
 
    // $('.group1').mouseleave(function() {
    //    $('#opening-quote1').fadeTo('slow', 0);
@@ -25,12 +26,12 @@ $(document).ready(function() {
 
 
    $('.group5').mouseenter(function() {
-       $('#ending-quote1').fadeTo('slow', 0.8);
-       $('#ending-quote2').delay(1200).fadeTo('slow', 0.8);
-       $('#ending-quote3').delay(1500).fadeTo('slow', 0.8);
-       $('#ending-quote3').delay(1800).fadeTo('slow', 0.8);
-       $('#ending-quote4').delay(2100).fadeTo('slow', 0.8);
-       $('#ending-quote5').delay(2100).fadeTo('slow', 0.8);
+       $('#ending-quote1').fadeTo('slow', 1);
+       $('#ending-quote2').fadeTo('slow', 1);
+       $('#ending-quote3').fadeTo('slow', 1);
+       $('#ending-quote3').fadeTo('slow', 1);
+       $('#ending-quote4').fadeTo('slow', 1);
+       $('#ending-quote5').fadeTo('slow', 1);
    });
 
    // $('.group5').mouseleave(function() {
