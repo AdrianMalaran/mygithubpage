@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+/*@import url('https://fonts.googleapis.com/css?family=Nunito');*/
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+/*////////////////////*/
+/*////////////////////*/
+/*////////////////////*/
+/*// Home Template // */
+/*////////////////////*/
+/*////////////////////*/
+#home {
+  font-family: 'Questrial', sans-serif;
+  /* SECTION 1*/
+  /*Handles the Jumbotron */
+  /* GREETINGS SCREEN/ABOUT ME SCREEN*/
+  /* SECTION 3  PROJECTS*/
+  /* SECTION 4 */
+}
+#home * {
+  margin: 0;
+  padding: 0;
+}
+#home body {
+  height: 100vh;
+  width: 50vh;
+}
+
+#home .bold-text {
+  font-weight: bolder;
+}
+#home .parallax {
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  height: 100vh;
+  width:80%;
+  /*overflow: hidden;*/
+  overflow-y: auto;
+  position: relative;
+}
+#home .parallax__layer {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#home .parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+}
+#home .parallax__layer--back {
+  height: 100vh;
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+  /*text-align: center;*/
+  vertical-align: -250px;
+  overflow: hidden;
+  z-index: 0;
+}
+#home .parallax__layer--deep {
+  -webkit-transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
+}
+#home .parallax__group {
+  position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#home .parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(0.7);
+  transform: translateZ(90px) scale(0.7);
+  z-index: 1;
+  width: 100%;
+}
+/*#home .parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
+}*/
+#home .jumbo-title {
+  font-weight: bolder;
+  font-size: 11vh;
+  padding-top: 10vh;
+  font-family:'Questrial', sans-serif;
+}
+#home .menu-bar {
+  width: 100%;
+  height: 9.6vh;
+  position: fixed;
+  font-size: 10vh;
+  background-color: white;
+  opacity:0.3;
+}
+#home .menu-bar .menu-item {
+  color:black;
+  font-weight: bolder;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  padding-top: 4vh;
+  font-family: 'Questrial', sans-serif;
+  font-size: 2.5vh;
+}
+#home .menu-bar .menu-item-strong {
+  padding-top: 4vh;
+  padding-left: 5vh;
+  padding-bottom: 5vh;
+  padding-right: 5vh;
+  font-family: 'Questrial', sans-serif;
+  font-size: 2.5vh;
+  font-weight: bolder;
+}
+#home .group-opener .back {
+  height: 80vh;
+  width:100%;
+  margin-left: -1vh;
+  z-index: 4;
+}
+#home .group-opener .base {
+  z-index: 5;
+  background: url('images/skyline.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #E38F7D
+}
+#home .group0{
+  background: url('images/clouds1.jpg');
+  background-position: center;
+}
+#home .group1 .base {
+  border-top:#e5e7e4 solid 50px;
+  border-bottom:#e5e7e4 solid 50px;
+  text-align: right;
+  padding-right: 10%;
+  font-weight:bolder;
+  background: url('images/waves3.jpg');
+  background-position: center;
+}
+#home #about-me-par {
+  color: black;
+  opacity: 0.6;
+  padding: 2vh;
+  width: auto;
+  margin-left:10%;
+  margin-top:5vh;
+}
+
+#home .group-experience{
+  /*background: ;*/
+  /*background-size: cover;*/
+  /*background-position: center;*/
+  background: url('images/clouds3.jpg');
+  background-position: center;
+  border-top:50px solid #e5e7e4;
+}
+#home .group-experience #group-experience-row1{
+}
+#home .group-experience #group-experience-col1{
+  border-bottom: white solid 5px;
+  font-size:8vh;
+  font-family:'Questrial', sans-serif;
+  color:white;
+  padding-left:1vh;
+}
+#home .group-experience #group-experience-col2{
+  border-left:10px white solid;
+}
+#home .group-experience #group-experience-col2 #group-experience-col2-row1{
+ color:white;
+ font-size:5vh;
+ margin-top: 2vh;
+ margin-right: 5%;
+ padding-left: 2%;
+ padding-bottom: 1vh;
+ border-bottom:white solid 5px;
+}
+#home .group-experience #group-experience-col2 #group-experience-col2-row2{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+#home .group-experience #group-experience-col2 #group-experience-col2-row3{
+ color:white;
+ font-size:5vh;
+ margin-top: 2vh;
+ margin-right: 5%;
+ padding-left: 2%;
+ padding-bottom: 1vh;
+ border-bottom:white solid 5px;
+}
+#home .group3 {
+  height:30vh;
+  z-index: 3;
+  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#f1f3f0), to(#e5e7e4));
+  background: linear-gradient(0, #f1f3f0, #e5e7e4);
+  font-family: 'Questrial', sans-serif;
+  font-weight: bolder;
+}
+#home .group3 #group3-col1{
+  margin-top:2vh;
+  /*background: black;*/
+  height:30vh;
+}
+#home .group3 #group3-col2{
+  margin-top:2vh;
+  border-top:black solid 10px;
+  border-bottom: black solid 10px;
+  height:28vh;
+}
+#home .group3 #group3-col3{
+  margin-top:2vh;
+  /*background: black;*/
+  height:30vh;
+}
+#home .group4 {
+  background: url('images/waves01.jpg');
+  height:200vh;
+  background-position: 60% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#home .group5 {
+  font-family: 'Questrial', sans-serif;
+  background: black;
+  color: white;
+  text-align: left;
+  padding: 2vh;
+  position:relative;
+}
+#home .group5 #group-5-col2{
+  border-left:white solid;
+  padding-left: 2%;
+}
+#home .group5 #group-5-row2{
+  padding-left: 2%;
+  text-align:center;
+}
+#home .about-me-sec {
+  height: 40vh;
+  width: 40vh;
+}
+#home .btn-primary {
+  color: black;
+  width: auto;
+  padding: 1vh;
+  margin: 2vh;
+  border: none;
+  font-size: 2vh;
+  background-color: white;
+  color: #9ca9b0;
+  border: #9ca9b0 solid 1px;
+}
+#home .btn-primary:hover {
+  opacity: 0.5;
+}
+#home .jumbo-title {
+  padding-top: 26vh;
+  opacity:0.6;
+  font-size: 12vh;
+  color:black;
+}
+#home .page-desc {
+  color: black;
+  margin-top: 29vh;
+  height: auto;
+  font-size: 2vh;
+}
+#home .page-desc-center-padding {
+  margin-top: 10vh;
+  height: auto;
+  font-size: 2vh;
+}
+#home .page-desc-extra-padding {
+  color: black;
+  padding-top: 56vh;
+}
+#home .page-desc-less-padding {
+  color: black;
+  padding-top: 56vh;
+}
+#home .footer-wrapper {
+  height: 40vh;
+  background-color: black;
+  margin-top: 10vh;
+  position: bottom;
+  font-family: 'Questrial', sans-serif;
+}
+#home .top-bottom-border {
+  border: #9ca9b0 1px solid;
+}
+#home .light-grey-background {
+  background: ;
+}
+#home .contact {
+  border: #9ca9b0 1px solid;
+  height: 50vh;
+  background: white;
+}
+#home .contact-filler {
+  height: 50vh;
+  padding-top: 18vh;
+}
+#home .contact-section {
+  padding: 2vh;
+  margin: 5%;
+  margin-bottom: 2%;
+}
+#home .contact-name {
+  width: 40%;
+}
+#home .contact-email {
+  width: 40%;
+}
+#home .contact-message {
+  width: 90%;
+}
+#home #section-contact {
+  margin-top: -15vh;
+  padding-top: 4vh;
+  z-index: 1;
+}
+#home #section-info {
+  background: url('images/falls1.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home .section-title {
+  font-size: 8vh;
+  padding-top: 10vh;
+  color: black;
+  text-align:center;
+  font-family: 'Questrial', sans-serif;
+}
+#home #opening-quote1 {
+  opacity: 1;
+  font-size: 2.5vh;
+  color:white;
+  font-family: 'Questrial', sans-serif;
+}
+#home #opening-quote2 {
+  opacity: 0;
+  color:white;
+  font-size: 2.5vh;
+}
+#home #opening-quote3 {
+  opacity: 0;
+  color:white;
+  font-size: 8vh;
+}
+#home #ending-quote1 {
+  opacity: 0.6;
+  font-size: 2.5vh;
+}
+#home #ending-quote2 {
+  opacity: 0.6;
+  font-size: 2.5vh;
+}
+#home #ending-quote3 {
+  opacity: 0.6;
+  font-size: 2.5vh;
+}
+#home #ending-quote4 {
+  opacity: 0.6;
+  font-size: 2.5vh;
+}
+#home #ending-quote5 {
+  opacity: 0.6;
+  font-size: 7vh;
+  color: white;
+}
+#home .project {
+  border: #121f25 5px solid;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  color: black;
+  background: white;
+  opacity: 0.8;
+}
+#home .project .title {
+  font-size: 6vh;
+  padding-left: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 0vh;
+  width: 95%;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  text-align: left;
+  font-family: 'Questrial', sans-serif;
+  border-top: 5px white solid;
+  border-bottom: 5px solid black;
+  border-left: 5px white solid;
+}
+#home .project .picture-left {
+  width: 50%;
+  height: 45vh;
+  border: black 5px solid;
+}
+#home .project .picture-right {
+  width: 50%;
+  height: 45vh;
+  border: black 5px solid;
+}
+#home .project .content {
+  font-size: 2vh;
+  padding: 1vh;
+  text-align: left;
+  height: 100%;
+  width: 100%;
+}
+#home #picture-ukulele-left {
+  background: url('images/ukulele03.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 50%;
+}
+#home #picture-ukulele-right {
+  background: url('images/ukulele02.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 50%;
+}
+#home #picture-trakrecord-left {
+  background: url('images/water.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 50%;
+}
+#home #picture-trakrecord-right {
+  background: url('images/waves01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 50%;
+}
+#home .font-black {
+  color: black;
+}
+#home .font-white {
+  color: white;
+}
+#home .font-blue-grey {
+  color: #123a49;
+}
+#home .font-blue-grey {
+  color: #a9cfe2;
+}
