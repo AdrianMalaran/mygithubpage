@@ -109,7 +109,7 @@ pyOpenSSL==0.14
 pyPdf==1.13
 pystache==0.5.4
 python-dateutil==2.2
-python-gnupg==0.3.6
+python-gnupg==0.4.4
 python-magic==0.4.6
 python-memcached==1.53
 python-openid==2.2.5
