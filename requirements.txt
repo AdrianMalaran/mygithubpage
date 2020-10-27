@@ -9,7 +9,7 @@ celery==3.1.18
 celery-haystack==0.9
 cffi==0.8.2
 characteristic==0.1.0
-cryptography==0.9.3
+cryptography==3.2
 dealer==2.0.4
 diff-match-patch==20110725.1
 dj-database-url==0.3.0
