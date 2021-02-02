@@ -2,7 +2,7 @@ amqp==1.4.6
 BeautifulSoup==3.2.1
 beautifulsoup4==4.3.2
 billiard==3.3.0.20
-bleach==1.4.1
+bleach==3.3.0
 boto==2.36.0
 businesstime==0.2.0
 celery==3.1.18
