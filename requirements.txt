@@ -103,7 +103,7 @@ pyasn1==0.1.7
 pyasn1-modules==0.0.5
 pycparser==2.10
 pycrypto==2.6.1
-Pygments==1.6
+Pygments==2.7.4
 pynliner==0.5.1
 pyOpenSSL==0.14
 pyPdf==1.13
