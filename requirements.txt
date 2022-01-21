@@ -82,7 +82,7 @@ html5lib==0.99999
 httpagentparser==1.2.2
 httpie==0.9.1
 httplib2==0.8
-ipython==2.0.0
+ipython==7.16.3
 jsonfield==1.0.3
 kombu==3.0.26
 logan==0.5.10
