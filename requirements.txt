@@ -91,7 +91,7 @@ mandrill==1.0.53
 nydus==0.10.7
 oauth2==1.5.211
 oauthlib==0.6.1
-paramiko==1.15.2
+paramiko==2.10.1
 pdfkit==0.4.1
 phonenumbers==6.2.0
 Pillow==2.9.0
