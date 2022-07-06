@@ -78,7 +78,7 @@ gnureadline==6.3.3
 greenlet==0.4.5
 gunicorn==18.0
 html2text==2015.6.21
-html5lib==0.99999
+html5lib==0.999999999
 httpagentparser==1.2.2
 httpie==0.9.1
 httplib2==0.8
